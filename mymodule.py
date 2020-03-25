@@ -3,7 +3,8 @@ import json
 
 api_key = "xxxxxxx"
 
-def get_weather_of(city):
+def get_weather_of_city(city):
+
   sock = urlopen("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + api_key)
   
   result = sock.read()
